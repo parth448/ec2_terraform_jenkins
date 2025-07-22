@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami           = "ami-0451f2687182e0411"
+  ami           = "ami-0b32d400456908bf9"
   instance_type = "t3.micro"
   security_groups = [aws_security_group.snpparth124082024.name]
   key_name = aws_key_pair.key_pair.key_name
