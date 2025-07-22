@@ -1,8 +1,8 @@
 resource "aws_instance" "terra" {
   ami           = "ami-0b32d400456908bf9"
-  instance_type = "c7i-flex.large"
+  instance_type = "t3.micro"
   security_groups = [aws_security_group.snpparth124082024.name]
-  key_name = aws_key_pair.key_pair.key_name
+  key_name = "parth-ec2-key"
 
   tags = {
     Name = "HelloWorld"
